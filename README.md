@@ -174,6 +174,57 @@ Names and company logos of all sponsors (from both Patreon and Open Collective) 
 - Various themes: **Cadmium Light**, **Material Dark** etc.
 - Various editing modes: **Source Code mode**, **Typewriter mode**, **Focus mode**.
 - Paste images directly from clipboard.
+- **Internationalization (i18n) support** - Multi-language interface with 5 languages.
+
+## Internationalization (i18n)
+
+MarkText Global now supports multiple languages with a comprehensive internationalization system.
+
+### Supported Languages
+
+| Language | Code | Status |
+|----------|------|--------|
+| English | en-US | ✅ Complete |
+| 简体中文 | zh-CN | ✅ Complete |
+| 日本語 | ja-JP | ✅ Complete |
+| 한국어 | ko-KR | ✅ Complete |
+| Français | fr-FR | ✅ Complete |
+
+### Features
+
+- **System Language Detection**: Automatically detects and uses your system language on first launch
+- **Real-time Language Switching**: Change language instantly without restarting the application
+- **Language Switch Confirmation**: Confirmation dialog prevents accidental language changes
+- **Smooth Transitions**: 50ms debounce mechanism prevents UI flickering during language switch
+- **Performance Optimization**: Debounced updates prevent multiple rapid changes
+- **Comprehensive Translation**: All UI components are fully translated including:
+  - Menu bar
+  - Settings/preferences panels
+  - Search functionality
+  - Sidebar components
+  - Export settings
+  - Title bar and status bar
+  - Dialog boxes and error messages
+
+### How to Change Language
+
+1. Open **Preferences** (Cmd/Ctrl + ,)
+2. Navigate to **General** settings
+3. Find **Interface Language** dropdown
+4. Select your preferred language
+5. Confirm the language change in the dialog
+
+### Translation Coverage
+
+The translation system covers 155 translation keys across all components:
+
+- **Settings**: General, Editor, Spellcheck, Theme, Image, Keybindings
+- **Menu**: File, Edit, Paragraph, Format, Window, Help, View
+- **Sidebar**: File tree, Open files, Search, Save/Close all
+- **Search**: Case sensitive, Whole word, Regex, Replace
+- **Export**: Page settings, Style, Theme, Header/Footer, Table of Contents
+- **Dialogs**: Confirmation, Error messages, Instructions
+- **Status Bar**: Word count, Character count, Line count, Cursor position
 
 <h4 align="center">:crescent_moon:themes:high_brightness:</h4>
 
