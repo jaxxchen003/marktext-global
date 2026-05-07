@@ -3,6 +3,7 @@ import VueElectron from 'vue-electron'
 import sourceMapSupport from 'source-map-support'
 import bootstrapRenderer from './bootstrap'
 import VueRouter from 'vue-router'
+import i18n from './i18n'
 import lang from 'element-ui/lib/locale/lang/en'
 import locale from 'element-ui/lib/locale'
 import axios from './axios'
@@ -89,6 +90,9 @@ Vue.use(Input)
 Vue.use(VueRouter)
 
 Vue.use(VueElectron)
+
+// Register i18n
+Vue.use(i18n)
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
@@ -103,6 +107,7 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
   store,
+  i18n,
   router,
   template: '<router-view class="view"></router-view>'
 }).$mount('#app')
