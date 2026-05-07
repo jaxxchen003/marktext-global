@@ -103,16 +103,10 @@
 
     <compound>
       <template #head>
-        <h6 class="title">Misc:</h6>
+        <h6 class="title">{{ $t('settings.general') }}:</h6>
       </template>
       <template #children>
-        <cur-select
-          description="User interface language"
-          :value="language"
-          :options="languageOptions"
-          :onChange="value => onSelectChange('language', value)"
-          :disable="true"
-        ></cur-select>
+        <language-setting />
       </template>
     </compound>
   </div>
@@ -125,6 +119,7 @@ import Range from '../common/range'
 import CurSelect from '../common/select'
 import Bool from '../common/bool'
 import Separator from '../common/separator'
+import LanguageSetting from './LanguageSetting.vue'
 import { isOsx } from '@/util'
 
 import {
@@ -140,7 +135,8 @@ export default {
     Bool,
     Range,
     CurSelect,
-    Separator
+    Separator,
+    LanguageSetting
   },
   data () {
     this.titleBarStyleOptions = titleBarStyleOptions

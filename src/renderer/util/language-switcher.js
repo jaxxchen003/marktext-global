@@ -1,14 +1,18 @@
 import VueElectron from 'vue-electron'
+
 const IPC = VueElectron.ipcRenderer
 
-export function setupLanguageListener(vm) {
+export const setupLanguageListener = (vm) => {
   IPC.on('language:changed', (event, lang) => {
     if (vm && vm.$i18n) vm.$i18n.locale = lang
   })
 }
 
-export function setLanguage(vm, lang) {
-  if (vm && vm.$i18n) vm.$i18n.locale = lang
+export const getUserLanguage = () => {
+  return IPC.sendSync('get:language')
+}
+
+export const setLanguage = (lang) => {
   IPC.send('set:language', lang)
 }
 

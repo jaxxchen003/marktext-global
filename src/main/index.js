@@ -9,6 +9,7 @@ import App from './app'
 import Accessor from './app/accessor'
 import setupEnvironment from './app/env'
 import { getLogLevel } from './utils'
+import { registerIpcHandlers } from './i18n'
 
 const initializeLogger = appEnvironment => {
   log.transports.console.level = process.env.NODE_ENV === 'development' ? 'info' : 'error'
@@ -79,6 +80,9 @@ log.transports.file.sync = false
 // TODO: We should switch to another async API like https://nornagon.medium.com/electrons-remote-module-considered-harmful-70d69500f31.
 // Enable remote module
 remoteInitializeServer()
+
+// 注册 i18n IPC 处理器，支持渲染进程的语言切换请求
+registerIpcHandlers()
 
 const marktext = new App(accessor, args)
 marktext.init()

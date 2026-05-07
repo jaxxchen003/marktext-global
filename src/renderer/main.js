@@ -4,7 +4,8 @@ import sourceMapSupport from 'source-map-support'
 import bootstrapRenderer from './bootstrap'
 import VueRouter from 'vue-router'
 import i18n from './i18n'
-import lang from 'element-ui/lib/locale/lang/en'
+import elementUILangEn from 'element-ui/lib/locale/lang/en'
+import elementUILangZhCN from 'element-ui/lib/locale/lang/zh-CN'
 import locale from 'element-ui/lib/locale'
 import axios from './axios'
 import store from './store'
@@ -59,8 +60,13 @@ addElementStyle()
 // -----------------------------------------------
 // Be careful when changing code before this line!
 
-// Configure Vue
-locale.use(lang)
+// Configure Vue - 根据当前语言动态加载 Element UI 语言包
+const elementLangMap = {
+  'en-US': elementUILangEn,
+  'zh-CN': elementUILangZhCN
+}
+const currentLang = i18n.locale || 'en-US'
+locale.use(elementLangMap[currentLang] || elementUILangEn)
 
 Vue.use(Dialog)
 Vue.use(Form)

@@ -1,6 +1,7 @@
-const { app, ipcMain, BrowserWindow } = require('electron')
+const { app, ipcMain, BrowserWindow, Menu } = require('electron')
 const fs = require('fs')
 const path = require('path')
+const { buildMenuTemplate } = require('../menu/langMenu')
 
 const getUserLanguage = () => {
   try {
@@ -27,6 +28,16 @@ const saveUserLanguage = (lang) => {
   }
 }
 
+const rebuildMenu = (lang) => {
+  try {
+    const template = buildMenuTemplate(lang)
+    const menu = Menu.buildFromTemplate(template)
+    Menu.setApplicationMenu(menu)
+  } catch (e) {
+    console.error('Failed to rebuild menu:', e)
+  }
+}
+
 const registerIpcHandlers = () => {
   ipcMain.on('get:language', (event) => {
     event.returnValue = getUserLanguage()
@@ -34,6 +45,7 @@ const registerIpcHandlers = () => {
 
   ipcMain.on('set:language', (event, lang) => {
     saveUserLanguage(lang)
+    rebuildMenu(lang)
     BrowserWindow.getAllWindows().forEach(win => {
       win.webContents.send('language:changed', lang)
     })
