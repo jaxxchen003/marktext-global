@@ -41,11 +41,20 @@
     "closeAll": "Close All",
     "emptyProject": "Empty project",
     "createFile": "Create File",
-    "openFolder": "Open Folder"
+    "openFolder": "Open Folder",
+    "searchInFolder": "Search in folder...",
+    "caseSensitive": "Case Sensitive",
+    "wholeWord": "Select whole word",
+    "regex": "Use query as RegEx",
+    "noFolderOpen": "No folder open",
+    "noResultsFound": "No results found."
   },
   "language": {
     "en": "English",
-    "zhCN": "Simplified Chinese"
+    "zhCN": "Simplified Chinese",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French"
   },
   "dialog": {
     "save": "Save",

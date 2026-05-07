@@ -41,7 +41,13 @@
     "closeAll": "Tout fermer",
     "emptyProject": "Projet vide",
     "createFile": "Créer un fichier",
-    "openFolder": "Ouvrir un dossier"
+    "openFolder": "Ouvrir un dossier",
+    "searchInFolder": "Rechercher dans le dossier...",
+    "caseSensitive": "Sensible à la casse",
+    "wholeWord": "Mot entier",
+    "regex": "Utiliser comme expression régulière",
+    "noFolderOpen": "Aucun dossier ouvert",
+    "noResultsFound": "Aucun résultat trouvé."
   },
   "language": {
     "en": "Anglais",

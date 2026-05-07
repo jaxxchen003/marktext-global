@@ -41,7 +41,13 @@
     "closeAll": "모두 닫기",
     "emptyProject": "빈 프로젝트",
     "createFile": "파일 만들기",
-    "openFolder": "폴더 열기"
+    "openFolder": "폴더 열기",
+    "searchInFolder": "폴더 내 검색...",
+    "caseSensitive": "대소문자 구분",
+    "wholeWord": "전체 단어",
+    "regex": "정규식으로 사용",
+    "noFolderOpen": "폴더가 열려 있지 않습니다",
+    "noResultsFound": "결과를 찾을 수 없습니다."
   },
   "language": {
     "en": "영어",
