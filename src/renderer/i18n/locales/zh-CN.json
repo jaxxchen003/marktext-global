@@ -25,7 +25,11 @@
     "autoSaveDelay": "自动保存延迟（毫秒）",
     "wordCount": "字数统计",
     "typewriter": "打字机模式",
-    "focusMode": "专注模式"
+    "focusMode": "专注模式",
+    "languageChangeConfirm": "语言切换确认",
+    "languageChangeMessage": "切换语言需要刷新界面才能完全生效。是否继续？",
+    "confirm": "确认",
+    "cancel": "取消"
   },
   "sidebar": {
     "aboutFiles": "关于",
@@ -72,7 +76,10 @@
     "fontSize": "字体大小",
     "lineHeight": "行高",
     "autoNumberingHeadings": "自动编号标题：",
-    "showFrontMatter": "显示前置内容："
+    "showFrontMatter": "显示前置内容：",
+    "pressEnterOrEsc": "按 Enter 继续，按 ESC 退出。",
+    "invalidKeybinding": "当前按键组合无法绑定！",
+    "pressKeyCombination": "按下按键组合"
   },
   "menu": {
     "file": "文件",
@@ -140,7 +147,10 @@
     "words": "字",
     "characters": "字符",
     "lines": "行",
-    "cursor": "光标"
+    "cursor": "光标",
+    "wordsLabel": "字数：",
+    "charactersLabel": "字符数：",
+    "paragraphsLabel": "段落数："
   },
   "editor": {
     "placeholder": "开始输入...",

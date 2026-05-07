@@ -6,6 +6,9 @@ import VueRouter from 'vue-router'
 import i18n from './i18n'
 import elementUILangEn from 'element-ui/lib/locale/lang/en'
 import elementUILangZhCN from 'element-ui/lib/locale/lang/zh-CN'
+import elementUILangJa from 'element-ui/lib/locale/lang/ja'
+import elementUILangKo from 'element-ui/lib/locale/lang/ko'
+import elementUILangFr from 'element-ui/lib/locale/lang/fr'
 import locale from 'element-ui/lib/locale'
 import axios from './axios'
 import store from './store'
@@ -64,7 +67,10 @@ addElementStyle()
 // Configure Vue - 根据当前语言动态加载 Element UI 语言包
 const elementLangMap = {
   'en-US': elementUILangEn,
-  'zh-CN': elementUILangZhCN
+  'zh-CN': elementUILangZhCN,
+  'ja-JP': elementUILangJa,
+  'ko-KR': elementUILangKo,
+  'fr-FR': elementUILangFr
 }
 const currentLang = i18n.locale || 'en-US'
 locale.use(elementLangMap[currentLang] || elementUILangEn)

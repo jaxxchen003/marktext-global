@@ -25,7 +25,11 @@
     "autoSaveDelay": "Auto Save Delay (ms)",
     "wordCount": "Word Count",
     "typewriter": "Typewriter Mode",
-    "focusMode": "Focus Mode"
+    "focusMode": "Focus Mode",
+    "languageChangeConfirm": "Language Change Confirmation",
+    "languageChangeMessage": "Changing the language requires a refresh to take full effect. Do you want to continue?",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
   },
   "sidebar": {
     "aboutFiles": "About",
@@ -72,7 +76,10 @@
     "fontSize": "Font size",
     "lineHeight": "Line height",
     "autoNumberingHeadings": "Auto numbering headings:",
-    "showFrontMatter": "Show front matter:"
+    "showFrontMatter": "Show front matter:",
+    "pressEnterOrEsc": "Press Enter to continue or ESC to exit.",
+    "invalidKeybinding": "Current key combination cannot be bound!",
+    "pressKeyCombination": "Press a key combination"
   },
   "menu": {
     "file": "File",
@@ -140,7 +147,10 @@
     "words": "Words",
     "characters": "Characters",
     "lines": "Lines",
-    "cursor": "Cursor"
+    "cursor": "Cursor",
+    "wordsLabel": "Words:",
+    "charactersLabel": "Characters:",
+    "paragraphsLabel": "Paragraphs:"
   },
   "editor": {
     "placeholder": "Start typing...",

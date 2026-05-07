@@ -7,7 +7,10 @@ Vue.use(VueElectron)
 
 const messages = {
   'en-US': require('./locales/en-US.json'),
-  'zh-CN': require('./locales/zh-CN.json')
+  'zh-CN': require('./locales/zh-CN.json'),
+  'ja-JP': require('./locales/ja-JP.json'),
+  'ko-KR': require('./locales/ko-KR.json'),
+  'fr-FR': require('./locales/fr-FR.json')
 }
 
 export default new VueI18n({

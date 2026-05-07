@@ -3,12 +3,18 @@ const fs = require('fs')
 const path = require('path')
 const { buildMenuTemplate } = require('../menu/langMenu')
 
-const supportedLanguages = ['en-US', 'zh-CN']
+const supportedLanguages = ['en-US', 'zh-CN', 'ja-JP', 'ko-KR', 'fr-FR']
 
 const getSystemLanguage = () => {
   const systemLang = app.getLocale()
   if (systemLang.startsWith('zh')) {
     return 'zh-CN'
+  } else if (systemLang.startsWith('ja')) {
+    return 'ja-JP'
+  } else if (systemLang.startsWith('ko')) {
+    return 'ko-KR'
+  } else if (systemLang.startsWith('fr')) {
+    return 'fr-FR'
   }
   return 'en-US'
 }
