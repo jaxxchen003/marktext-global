@@ -31,7 +31,13 @@
     "aboutFiles": "关于",
     "folderTree": "文件夹",
     "openFiles": "已打开",
-    "searchFiles": "搜索文件"
+    "searchFiles": "搜索文件",
+    "openedFiles": "已打开的文件",
+    "saveAll": "全部保存",
+    "closeAll": "全部关闭",
+    "emptyProject": "空项目",
+    "createFile": "创建文件",
+    "openFolder": "打开文件夹"
   },
   "language": {
     "en": "英文",
@@ -43,7 +49,30 @@
     "dontSave": "不保存",
     "exportSuccess": "导出成功",
     "importWarning": "导入警告",
-    "installPandoc": "在导入文件之前先安装 pandoc。"
+    "installPandoc": "在导入文件之前先安装 pandoc。",
+    "exportOptions": "导出选项",
+    "info": "信息",
+    "page": "页面",
+    "style": "样式",
+    "theme": "主题",
+    "headerFooter": "页眉页脚",
+    "toc": "目录",
+    "export": "导出",
+    "pleaseCustomize": "请自定义页面外观，然后点击"导出"继续。",
+    "pageTitle": "页面标题：",
+    "pageSize": "页面大小：",
+    "custom": "自定义",
+    "widthHeight": "宽度/高度（毫米）：",
+    "landscapeOrientation": "横向：",
+    "pageMargin": "页面边距（毫米）：",
+    "topBottom": "上/下：",
+    "leftRight": "左/右：",
+    "overwriteThemeFont": "覆盖主题字体设置：",
+    "fontFamily": "字体：",
+    "fontSize": "字体大小",
+    "lineHeight": "行高",
+    "autoNumberingHeadings": "自动编号标题：",
+    "showFrontMatter": "显示前置内容："
   },
   "menu": {
     "file": "文件",
@@ -116,5 +145,18 @@
   "editor": {
     "placeholder": "开始输入...",
     "untitled": "无标题"
+  },
+  "search": {
+    "search": "搜索",
+    "replace": "替换",
+    "replacement": "替换内容",
+    "caseSensitive": "区分大小写",
+    "wholeWord": "全字匹配",
+    "regex": "正则表达式",
+    "replaceAll": "全部替换",
+    "replaceSingle": "替换单个",
+    "invalidRegex": "无效的正则表达式：/{value}/。",
+    "matchEmptyString": "正则表达式：/{value}/ 匹配空字符串。",
+    "noResults": "无结果"
   }
 }

@@ -3,13 +3,26 @@ const fs = require('fs')
 const path = require('path')
 const { buildMenuTemplate } = require('../menu/langMenu')
 
+const supportedLanguages = ['en-US', 'zh-CN']
+
+const getSystemLanguage = () => {
+  const systemLang = app.getLocale()
+  if (systemLang.startsWith('zh')) {
+    return 'zh-CN'
+  }
+  return 'en-US'
+}
+
 const getUserLanguage = () => {
   try {
     const settingPath = path.join(app.getPath('userData'), 'globalSetting.json')
     const settings = JSON.parse(fs.readFileSync(settingPath, 'utf8'))
-    return settings.language || 'en-US'
+    if (settings.language) {
+      return settings.language
+    }
+    return getSystemLanguage()
   } catch (e) {
-    return 'en-US'
+    return getSystemLanguage()
   }
 }
 

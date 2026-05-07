@@ -39,6 +39,7 @@ import {
 import services from './services'
 import routes from './router'
 import { addElementStyle } from '@/util/theme'
+import { setupLanguageListener } from '@/util/language-switcher'
 
 import './assets/styles/index.css'
 import './assets/styles/printService.css'
@@ -111,9 +112,11 @@ const router = new VueRouter({
 })
 
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
   store,
   i18n,
   router,
   template: '<router-view class="view"></router-view>'
 }).$mount('#app')
+
+setupLanguageListener(app)
